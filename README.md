@@ -3,12 +3,23 @@
 ## Verify the monitoring installation
 
 *TODO:* run `kubectl` command to show the running pods and services for all components. Take a screenshot of the output and include it here to verify the installation
+
 **kubectl monitoring**
 
 ![kubectl-monitoring](https://user-images.githubusercontent.com/47803421/230867495-64884833-8ae1-4fad-ac26-972c6fba3fd3.PNG)
 
+**kubectl observability**
+
+![kubectl-observability](https://user-images.githubusercontent.com/47803421/230868152-7ce4a19c-ebf7-4f29-9aed-33b8fd3cbdf6.PNG)
+
+**kubectl default - Manifest App**
+
+![kubectl-manifest-app](https://user-images.githubusercontent.com/47803421/230868225-035b1cd7-5550-4c93-819c-ec161edeeb7b.PNG)
+
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
+
+![prometheus-grafana](https://user-images.githubusercontent.com/47803421/230868837-a77f2175-6e41-430e-910e-ac6912e8135f.PNG)
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
