@@ -25,6 +25,9 @@
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
+![prometheus-basic-dashboard-2](https://user-images.githubusercontent.com/47803421/230875173-68baa702-b570-4d9d-b562-5a9971f24ea1.PNG)
+
+
 ![prometheus-basic-dashboard](https://user-images.githubusercontent.com/47803421/230873238-3900bd96-db24-4ab8-adc5-e6ca9ef10c4c.PNG)
 
 
@@ -36,7 +39,6 @@ monthly uptime: This metric would track the percentage of time that the service 
 
 Response time: This metric would track the time taken for the service to respond to a request. It would be measured in milliseconds and would be calculated as the time taken from when the request was received to when the response was sent. This metric would be used to track the SLO for request response time.
 
-By measuring and tracking these SLIs, it is possible to monitor the performance of the service and ensure that it is meeting the SLOs set for it. If the SLIs indicate that the service is not meeting its SLOs, then action can be taken to identify and address the underlying issues.
 
 ## Creating SLI metrics.
 *TODO:* It is important to know why we want to measure certain metrics for our customer. Describe in detail 5 metrics to measure these SLIs. 
