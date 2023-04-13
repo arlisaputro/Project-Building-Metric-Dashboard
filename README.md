@@ -6,30 +6,28 @@
 
 **kubectl monitoring**
 
-![kubectl-monitoring](https://user-images.githubusercontent.com/47803421/230867495-64884833-8ae1-4fad-ac26-972c6fba3fd3.PNG)
+![namespace_monitoring](https://user-images.githubusercontent.com/47803421/231892440-60c27c7d-ad3b-4eef-a36a-9b87300a5684.PNG)
 
 **kubectl observability**
 
-![kubectl-observability](https://user-images.githubusercontent.com/47803421/230868152-7ce4a19c-ebf7-4f29-9aed-33b8fd3cbdf6.PNG)
+![namespace_observability](https://user-images.githubusercontent.com/47803421/231892475-c0514a63-deb5-47b0-8928-0eb11db889a7.PNG)
 
 **kubectl default - Manifest App**
 
-![kubectl-manifest-app](https://user-images.githubusercontent.com/47803421/230868225-035b1cd7-5550-4c93-819c-ec161edeeb7b.PNG)
+![namespace_default_apps](https://user-images.githubusercontent.com/47803421/231892520-b503e6d8-08c5-4cd2-9cae-44673c097a2e.PNG)
 
 ## Setup the Jaeger and Prometheus source
 *TODO:* Expose Grafana to the internet and then setup Prometheus as a data source. Provide a screenshot of the home page after logging into Grafana.
 
-![homepage-grafana](https://user-images.githubusercontent.com/47803421/230871860-e42c0e6c-6e64-4814-bc6d-b33eb2cf499d.PNG)
+![grafana_login_datasource_prometheus](https://user-images.githubusercontent.com/47803421/231892543-31086690-24d7-4242-8c61-8d68bf3db3e1.PNG)
 
 
 ## Create a Basic Dashboard
 *TODO:* Create a dashboard in Grafana that shows Prometheus as a source. Take a screenshot and include it here.
 
-![prometheus-basic-dashboard-2](https://user-images.githubusercontent.com/47803421/230875173-68baa702-b570-4d9d-b562-5a9971f24ea1.PNG)
+![dashboard_prometheus_1](https://user-images.githubusercontent.com/47803421/231892950-c5a77b3d-df4a-45d8-9c1e-574a739e152e.PNG)
 
-
-![prometheus-basic-dashboard](https://user-images.githubusercontent.com/47803421/230873238-3900bd96-db24-4ab8-adc5-e6ca9ef10c4c.PNG)
-
+![dashboard_prometheus_2](https://user-images.githubusercontent.com/47803421/231892967-07341a28-0b42-490e-bd8d-557a3cebeb31.PNG)
 
 ## Describe SLO/SLI
 *TODO:* Describe, in your own words, what the SLIs are, based on an SLO of *monthly uptime* and *request response time*.
@@ -56,6 +54,8 @@ here are 5 metrics to measure SLIs for the SLOs of monthly uptime and request re
 
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
+
+
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
