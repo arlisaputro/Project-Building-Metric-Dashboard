@@ -69,6 +69,9 @@ here are 5 metrics to measure SLIs for the SLOs of monthly uptime and request re
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
 
+![dashboard-jaeger1](https://user-images.githubusercontent.com/47803421/231899552-267f3b7f-a710-447d-8369-10f6bb808911.PNG)
+
+![dashboard-jaeger2](https://user-images.githubusercontent.com/47803421/231899573-a1a48de2-5895-40f3-ace6-4f43fc72754f.PNG)
 
 
 ## Report Error
@@ -95,8 +98,37 @@ fetch url are not right.
 ## Creating SLIs and SLOs
 *TODO:* We want to create an SLO guaranteeing that our application has a 99.95% uptime per month. Name four SLIs that you would use to measure the success of this SLO.
 
+SLIs:
+
+We got less than 10 error responses in the last 24 hours.
+We got an average response time of < 2000ms per minute.
+We got 75% more successful responses than errors.
+99% of our responses had the right data format.
+SLO:
+
+99.9% uptime per month.
+99.9% of responses to our front-service will return 2xx, 3xx or 4xx HTTP code within 2000 ms.
+99.99% of transaction requests will succeed over any calendar month.
+99.9% of backend service requests will succeed on their first attempt.
+
 ## Building KPIs for our plan
 *TODO*: Now that we have our SLIs and SLOs, create a list of 2-3 KPIs to accurately measure these metrics as well as a description of why those KPIs were chosen. We will make a dashboard for this, but first write them down here.
 
+less than 10 error responses in the last 24 hours.
+1. Successful requests per minute: this KPI indicates how well is performed our system.
+2. Error requests per minute: this KPI is an analogous of this SLI.
+3. Uptime - this KPI indicates if errors are comming from downtime or not.
+
+average response time of < 2000ms in the las 24 hours.
+1. Average response time: this KPI is an analogous of this SLI.
+2. Uptime - this KPI will help us to determine if response time is affected by downtime of a service.
+
+75% more successful responses than errors.
+1. Successful requests per minute: this KPI indicates the number of successful request.
+2. Error requests per minute: this KPI indicates the number of error requests.
+
 ## Final Dashboard
 *TODO*: Create a Dashboard containing graphs that capture all the metrics of your KPIs and adequately representing your SLIs and SLOs. Include a screenshot of the dashboard here, and write a text description of what graphs are represented in the dashboard.  
+
+![final-dasbhoard](https://user-images.githubusercontent.com/47803421/231899994-78b10da6-96de-4d81-acce-a6ad7dcc5095.PNG)
+
