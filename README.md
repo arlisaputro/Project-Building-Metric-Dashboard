@@ -55,30 +55,36 @@ here are 5 metrics to measure SLIs for the SLOs of monthly uptime and request re
 ## Create a Dashboard to measure our SLIs
 *TODO:* Create a dashboard to measure the uptime of the frontend and backend services We will also want to measure to measure 40x and 50x errors. Create a dashboard that show these values over a 24 hour period and take a screenshot.
 
+![dashboard-sli](https://user-images.githubusercontent.com/47803421/231898390-869ebe7a-915b-478d-9d86-b86dc5223be1.PNG)
 
 
 ## Tracing our Flask App
 *TODO:*  We will create a Jaeger span to measure the processes on the backend. Once you fill in the span, provide a screenshot of it here. Also provide a (screenshot) sample Python file containing a trace and span code used to perform Jaeger traces on the backend service.
 
+![span_python](https://user-images.githubusercontent.com/47803421/231898464-e4caf912-c0ae-4925-8137-b594556b8734.PNG)
+
+![tracing_backend](https://user-images.githubusercontent.com/47803421/231898489-7f468fc5-2aae-4ef0-9fc3-61887e2837da.PNG)
+
+
 ## Jaeger in Dashboards
 *TODO:* Now that the trace is running, let's add the metric to our current Grafana dashboard. Once this is completed, provide a screenshot of it here.
+
+
 
 ## Report Error
 *TODO:* Using the template below, write a trouble ticket for the developers, to explain the errors that you are seeing (400, 500, latency) and to let them know the file that is causing the issue also include a screenshot of the tracer span to demonstrate how we can user a tracer to locate errors easily.
 
-TROUBLE TICKET
+**TROUBLE TICKET**
 
-Name:
+**Name**: arli saputro
+**Date**: 04/14/2023 9:21:09 PM
+**Subject**: Front-end service is creating many 40x and 50x errors
+**Affected Area**: API requests
+**Severity**: High
 
-Date:
-
-Subject:
-
-Affected Area:
-
-Severity:
-
-Description:
+**Description**:
+The `static/js/click.js` file is not handling clicks correctly and requests can not be processed because the
+fetch url are not right.
 
 
 ## Creating SLIs and SLOs
