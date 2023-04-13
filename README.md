@@ -77,10 +77,15 @@ here are 5 metrics to measure SLIs for the SLOs of monthly uptime and request re
 **TROUBLE TICKET**
 
 **Name**: arli saputro
+
 **Date**: 04/14/2023 9:21:09 PM
+
 **Subject**: Front-end service is creating many 40x and 50x errors
+
 **Affected Area**: API requests
+
 **Severity**: High
+
 
 **Description**:
 The `static/js/click.js` file is not handling clicks correctly and requests can not be processed because the
