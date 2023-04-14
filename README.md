@@ -81,18 +81,18 @@ here are 5 metrics to measure SLIs for the SLOs of monthly uptime and request re
 
 **Name**: arli saputro
 
-**Date**: 04/14/2023 9:21:09 PM
+**Date**: April 15 2023, 03:30:37.399 AM
 
-**Subject**: Front-end service is creating many 40x and 50x errors
+**Subject**: Front-end service for bad test button will get error 404
 
 **Affected Area**: API requests
 
 **Severity**: High
 
-
 **Description**:
-The `static/js/click.js` file is not handling clicks correctly and requests can not be processed because the
-fetch url are not right.
+"value": "http://localhost:8081/favicon.ico" is not handling clicks correctly and requests can not be processed because the fetch url are not right.
+
+![errorTracing404](https://user-images.githubusercontent.com/47803421/232150649-92f79e20-cb43-47da-87c1-4f723b371856.PNG)
 
 
 ## Creating SLIs and SLOs
